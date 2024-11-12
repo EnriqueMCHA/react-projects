@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  place-content: center;
+  margin-bottom: 1rem;
+}
+
+img {
+  border-radius: 5px;
+
+}
+
+p, h3 {
+  margin: 0;
+}
+
+input {
+  margin-bottom: 0;
+}
+
+.page {
+  display: flex;
+  place-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.noResult {
+  margin-top: 1rem;
+}
+
+.movies {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.error {
+  border: 2px solid red
+}
+
+/* input {
+  width: 50%;
+}  */

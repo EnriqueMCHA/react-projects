@@ -1,0 +1,54 @@
+* {
+    font-family: Roboto;
+}
+
+body {
+    background-color: black;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.tw-followCard {
+    margin: 1rem 0;
+}
+
+.tw-followCard, .tw-followCard-info, .tw-followCard-content, .tw-followCard-info b {
+    display: flex;
+    align-items: center;
+}
+
+.tw-followCard-content {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.tw-followCard, .tw-followCard-info {
+    color: #f2f2f2;
+}
+
+.tw-followCard-info {
+    align-items: start;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.tw-followCard-info svg {
+    margin-left: 0.25rem;
+}
+
+.tw-followCard-avatar {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.tw-followCard-button {
+    border-radius: 50px;
+    background: white;
+    border: 0;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    align-self: end;
+}
