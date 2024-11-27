@@ -1,16 +1,19 @@
+import useCart from "../hooks/useCart";
 import { AddToCartIcon, RemoveFromCartIcon } from "./Icons";
 
-function Products({ products, cart, handleAddToCart, handleRemoveFromCart }) {
+function Products({ products }) {
+
+  const { cart, handleRemoveFromCart, handleAddToCart } = useCart();
 
   const checkProductInCart = (product) => {
-    return cart.some((cartProduct) => cartProduct.id === product.id);
+    return cart?.some((cartProduct) => cartProduct.id === product.id);
   }
 
   return (
     <main className="products">
       <ul>
         {
-          products.map((product) => {
+          products?.map((product) => {
 
             const isProductInCart = checkProductInCart(product);
 
