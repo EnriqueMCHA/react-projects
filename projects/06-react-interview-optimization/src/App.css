@@ -1,0 +1,18 @@
+#root {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.show--color tr:nth-child(odd) {
+  background-color: #333;
+}
+
+.show--color tr:nth-child(even) {
+  background-color: #555;
+}
